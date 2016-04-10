@@ -5001,13 +5001,25 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
+div.transbox {
+    margin: 30px;
+    background-color: #000;
+    border: 1px solid black;
+    opacity: 1;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    background-color: #333;
+}
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #000;
-  border: 8px solid #fff;
+  width: 75%;
+  margin-left: 11.5%;
+  /*background-color: #000;*/
+  border: 8px solid #FFF;
+  border-radius: 6px;
+  text-align: center;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5047,12 +5059,14 @@ a.badge:focus {
 }
 .thumbnail {
   display: block;
-  padding: 4px;
+  padding: 10px;
+  margin-left: 9.5%;
+  width:80%;
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #000;
-  border: 1px solid #222;
-  border-radius: 4px;
+  border: 3px solid #fff;
+  border-radius: 6px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
@@ -5065,11 +5079,11 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #fff;
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #333;
+  color: #fff;
 }
 .alert {
   padding: 15px;
