@@ -17,6 +17,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -30,15 +33,33 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
             </div>
             <div class="modal-body">
+            <h2>Design Club Membership</h2>
+            <h5>You will be subscribed to weekly email updates and your name will be added to the College of Computing's list of Design Club members.</h5>
+            <input placeholder="Your Name">
+            <input placeholder="Your Email">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">
-                    Save changes
-                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <div class="btn btn-default"><a href="#" data-toggle="modal" data-dismiss="modal" data-target="#confirmModal">Join</a></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+            <h2>Design Club Membership</h2>
+            <h5>You're now a member of Design Club! Congratulations!</h5>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
             </div>
         </div>
       </div>
@@ -58,7 +79,7 @@
                   <li><a href="Events.html">Events</a></li>
                   <li><a href="Resources.html">Resources</a></li>
                   <!-- open modal to submit -->
-                  <li><a href="Sumbit.html">Submit</a></li>
+                  <!-- <li><a href="Sumbit.html">Submit</a></li> -->
                   <!-- open modal to join email list -->
                   <li><a href="#" data-toggle="modal" data-target="#emailModal">Join</a></li>
                 </ul>
@@ -72,10 +93,22 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: rgba(0, 0, 0, .8); border-style: solid; border-width: 3px; border-color: #fff;">
-            <h1> Design Club @ Georgia Tech </h1>
-            <iframe src="email.html" style="width:100%; height:100%; min-height:800px; background-color: rgba(0, 0, 0, .8)"></iframe>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background-color: rgba(0, 0, 0, .8); padding: 30px;">
+            <h1 style="color: #fff;"> Design Club @ Georgia Tech </h1>
+            <iframe src="email.html" style="width:100%; height:100%; min-height:800px;"></iframe>
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"></div>
+              <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 center-block">
+                <a href="https://drive.google.com/open?id=0B1jb3iCEzL24dTNvUmdLMnl5Mzg" class="btn btn-primary">This Week's Resources</a>
+                <a href="Resources.html" class="btn btn-default">Previous Weeks' Resources</a>
+                
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12"></div>
+            </div>
           </div>
+           
+          
+
             <!-- close col -->
           <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8">
             <!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=gtdesignclub%40gmail.com&amp;color=%235229A3&amp;ctz=America%2FNew_York" -->
